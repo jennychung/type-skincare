@@ -1,0 +1,210 @@
+
+@font-face {
+  font-family: foundersGroteskRegular;
+  src: url(foundersgrotesk-regular.woff);
+}
+
+@font-face {
+  font-family: foundersGroteskSemibold;
+  src: url(foundersgrotesk-semibold.woff);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: tiemposTextSemibold;
+  src: url(TiemposText-Semibold.woff);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+  background-color: #F6F0E9;
+  font-family: foundersGroteskRegular;
+  padding-bottom: 100px;
+}
+
+.summary{
+    display: grid;
+    grid-template-columns: repeat(2, [col-start] 1fr);
+}
+
+.gridlogo{
+  grid-column: col-start / span 11;
+  grid-row: 1;
+  margin-left: 20px;
+}
+
+.menu{
+  /* grid-area: col-start 11/-1; */
+  /* grid-row: 3  ; */
+  position: sticky;
+  top: 40%;
+  right: 20px;
+  text-align: right!important;
+  /* margin-right: 20px; */
+}
+
+.gridtitle{
+  grid-column: col-start 3 / span 5;
+  grid-row: 1;
+  margin-top: 20%;
+}
+
+/* subtitle */
+.start3span5{
+  grid-column: col-start 3 / span 4;
+}
+
+/* intro */
+.start4span4{
+  grid-column: col-start 4 / span 4;
+}
+
+/* intro photo */
+.start8span4{
+  grid-column: col-start 8 / span 4;
+}
+
+/* indented titles */
+.start3span4{
+  grid-column: col-start 3 / span 4;
+}
+
+/* indented long titles */
+.start3span6{
+  grid-column: col-start 3 / span 6;
+}
+
+/* indented body */
+.start6span4{
+  grid-column: col-start 6 / span 4;
+}
+
+/* pull out */
+.start2span3{
+  grid-column: col-start 2 / span 3;
+}
+
+/* main body */
+.start5span4{
+  grid-column: col-start 5 / span 4;
+}
+
+/* pull quote */
+.start3span8{
+  grid-column: col-start 3 / span 8;
+}
+
+/* photo */
+.start1span4{
+  grid-column: col-start / span 4;
+}
+
+/* photo */
+.start2span2{
+  grid-column: col-start 2 / span 2;
+}
+
+/* photo */
+.start1span1{
+  grid-column: col-start / span 1;
+}
+
+/* photo */
+.start5span3{
+  grid-column: col-start 5 / span 3;
+}
+
+/* photo */
+.start8span3{
+  grid-column: col-start 8 / span 3;
+}
+
+
+/* .grid-container {
+  display: grid;
+  grid-template-areas:
+  'logo . . . . . . . . . . . '
+  '. . title title title title title . . . . menu'
+  '. . subtitle subtitle subtitle subtitle subtitle . . . . menu'
+  '. . . body body body body picture picture picture picture .';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+} */
+
+.wrapper > div {
+  background-color: #F6F0E9;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.title{
+  font-family: tiemposTextSemibold;
+}
+
+.body{
+  font-family: foundersGroteskRegular;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body{
+  margin:0;
+}
+
+h3{
+  font-family: foundersGroteskSemibold;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0;
+}
+
+.br{
+  display: block;
+  margin-bottom: 0em;
+}
+
+.menu{
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+}
+
+.sectionTitle{
+  font-family: tiemposTextSemibold;
+  font-size: 30px !important;
+}
+
+.pullquote{
+  font-family: tiemposTextSemibold;
+  font-size: 45px !important;
+}
+
+hr {
+  border-color: black;
+}
+
+.imagediv{
+  display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden!important
+}
+
+img{
+  object-fit: cover;
+  /* min-width: 100%; */
+/* width: auto; */
+/* height: auto; */
+}
+
+.centervertical{
+  margin: auto!important;
+}
+
+h2{
+  font-size: 20px!important;
+}
