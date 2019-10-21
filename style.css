@@ -216,17 +216,17 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: black;
+  color: black!important;
 }
 
 /* mouse over link */
 a:hover {
-  color: #E8B802;
+  color: #E8B802!important;
 }
 
 /* selected link */
 a:active {
-  color: #E8B802;
+  color: #E8B802!important;
 }
 
 a:target{
