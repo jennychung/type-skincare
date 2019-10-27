@@ -121,6 +121,10 @@
   grid-column: col-start 8 / span 3;
 }
 
+.start2span10{
+  grid-column: col-start 2 / span 10;
+}
+
 
 /* .grid-container {
   display: grid;
@@ -183,6 +187,13 @@ h3{
   font-size: 45px !important;
 }
 
+#IngredientList{
+  font-size: 64px;
+  /* font-family: foundersGroteskSemibold; */
+  font-family: foundersGroteskRegular;
+  line-height: 60px;
+}
+
 hr {
   border-color: black;
 }
@@ -231,4 +242,160 @@ a:active {
 
 a:target{
   color: #E8B802;
+}
+
+#postshower{
+  padding-top: 50%;
+}
+
+
+@media (max-width: 780px) {
+
+  .wrapper {
+    display: grid;
+    /* grid-template-columns: repeat(12, [col-start] 1fr); */
+    grid-column: col-start / span 12;
+    grid-gap: 20px;
+    background-color: #F6F0E9;
+    font-family: foundersGroteskRegular;
+    padding-bottom: 100px;
+
+  }
+
+  .summary{
+      display: grid;
+      /* grid-template-columns: repeat(2, [col-start] 1fr); */
+      grid-column: col-start 2 / span 12;
+  }
+
+  .gridlogo{
+    grid-column: col-start 2/ span 11;
+    grid-row: 1;
+    margin-left: 20px;
+
+  }
+
+  .menu{
+    /* grid-area: col-start 11/-1; */
+    /* grid-row: 3  ; */
+    position: sticky;
+    top: 40%;
+    right: 20px;
+    text-align: right!important;
+    /* margin-right: 20px; */
+  }
+
+  .gridtitle{
+    /* grid-column: col-start 3 / span 5; */
+    grid-column: col-start 2/ span 11;
+    grid-row: 1;
+    margin-top: 40%;
+  }
+
+  /* subtitle */
+  .start3span5{
+    /* grid-column: col-start 3 / span 4; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* intro */
+  .start4span4{
+    /* grid-column: col-start 4 / span 4; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* intro photo */
+  .start8span4{
+    /* grid-column: col-start 8 / span 4; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* indented titles */
+  .start3span4{
+    /* grid-column: col-start 3 / span 4; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* indented long titles */
+  .start3span6{
+    /* grid-column: col-start 3 / span 6; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* indented body */
+  .start6span4{
+    /* grid-column: col-start 6 / span 4; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* pull out */
+  .start2span3{
+    /* grid-column: col-start 2 / span 3; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* main body */
+  .start5span4{
+    /* grid-column: col-start 5 / span 4; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* pull quote */
+  .start3span8{
+    /* grid-column: col-start 3 / span 8; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* photo */
+  .start1span4{
+    /* grid-column: col-start / span 4; */
+    grid-column: col-start 2 / span 11;
+  }
+
+  /* photo */
+  .start2span2{
+    /* grid-column: col-start 2 / span 2; */
+    /* grid-column: col-start 2 / span 10; */
+
+          grid-column: col-start 7 / span 11;
+  }
+
+  /* photo */
+  .start1span1{
+    /* grid-column: col-start / span 1; */
+    /* grid-column: col-start 2 / span 10; */
+      grid-column: col-start 1/ span 6;
+  }
+
+  /* photo */
+  .start5span3{
+    /* grid-column: col-start 5 / span 3; */
+    grid-column: col-start 1 / span 6;
+  }
+
+  /* photo */
+  .start8span3{
+    /* grid-column: col-start 8 / span 3; */
+    grid-column: col-start 7 / span 11;
+  }
+
+  .start2span10{
+    /* grid-column: col-start 2 / span 10; */
+    grid-column: col-start 2/ span 11;
+  }
+
+  #postshower{
+    padding-top: 5%;
+  }
+
+  .hide{
+visibility: hidden;
+  }
+
+  #IngredientList{
+    font-size: 48px;
+    /* font-family: foundersGroteskSemibold; */
+    font-family: foundersGroteskRegular;
+    line-height: 45px;
+  }
 }
